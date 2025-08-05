@@ -1,7 +1,7 @@
 try:
-    from ....pygame_render.stimuli import BaseText
+    from ....pygame_render import BaseText
 except ImportError:
-    from rewardgym.pygame_render.stimuli import BaseText
+    from rewardgym.pygame_render import BaseText
 
 
 def get_pygame_info(action_map, window_size=256):

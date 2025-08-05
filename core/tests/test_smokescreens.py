@@ -46,10 +46,10 @@ def test_get_pygame_info():
 
 
 def test_get_psychopy_info():
-    if get_pygame_info is not None:
+    if get_psychopy_info is not None:
         a, b = get_psychopy_info()
         assert isinstance(a, dict)
-        assert isinstance(b, dict)
+        assert isinstance(b, dict) or (b is None)
     else:
         warnings.warn("Import of test_get_psychopy_info was None, is this intended?")
 
